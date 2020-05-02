@@ -1,0 +1,410 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MutationController | arca.api</title>
+	<meta name="description" content="Documentation for arca.api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">arca.api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_controllers_mutation_controller_.html">&quot;controllers/mutation.controller&quot;</a>
+				</li>
+				<li>
+					<a href="_controllers_mutation_controller_.mutationcontroller.html">MutationController</a>
+				</li>
+			</ul>
+			<h1>Class MutationController</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>description</dt>
+						<dd><p>A simple controller to bounce back http requests,
+							this contains all the necessary methods to validate the request body.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">MutationController</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_controllers_mutation_controller_.mutationcontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_controllers_mutation_controller_.mutationcontroller.html#mutationrepository" class="tsd-kind-icon">mutation<wbr>Repository</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controllers_mutation_controller_.mutationcontroller.html#req" class="tsd-kind-icon">req</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_controllers_mutation_controller_.mutationcontroller.html#requestbody" class="tsd-kind-icon">request<wbr>Body</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_controllers_mutation_controller_.mutationcontroller.html#res" class="tsd-kind-icon">res</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_controllers_mutation_controller_.mutationcontroller.html#mutation" class="tsd-kind-icon">mutation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_controllers_mutation_controller_.mutationcontroller.html#stats" class="tsd-kind-icon">stats</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mutation<wbr>Controller<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span>, mutationRepository<span class="tsd-signature-symbol">: </span><a href="_repositories_mutation_repository_.mutationrepository.html" class="tsd-signature-type">MutationRepository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_controllers_mutation_controller_.mutationcontroller.html" class="tsd-signature-type">MutationController</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/controllers/mutation.controller.ts:71</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructs</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <span class="tsd-signature-type">Request</span></h5>
+								</li>
+								<li>
+									<h5>res: <span class="tsd-signature-type">Response</span></h5>
+								</li>
+								<li>
+									<h5>mutationRepository: <a href="_repositories_mutation_repository_.mutationrepository.html" class="tsd-signature-type">MutationRepository</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_controllers_mutation_controller_.mutationcontroller.html" class="tsd-signature-type">MutationController</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="mutationrepository" class="tsd-anchor"></a>
+					<h3>mutation<wbr>Repository</h3>
+					<div class="tsd-signature tsd-kind-icon">mutation<wbr>Repository<span class="tsd-signature-symbol">:</span> <a href="_repositories_mutation_repository_.mutationrepository.html" class="tsd-signature-type">MutationRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/controllers/mutation.controller.ts:79</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="req" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> req</h3>
+					<div class="tsd-signature tsd-kind-icon">req<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Request</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/controllers/mutation.controller.ts:77</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="requestbody" class="tsd-anchor"></a>
+					<h3>request<wbr>Body</h3>
+					<div class="tsd-signature tsd-kind-icon">request<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/controllers/mutation.controller.ts:71</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="res" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> res</h3>
+					<div class="tsd-signature tsd-kind-icon">res<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Response</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/controllers/mutation.controller.ts:78</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="mutation" class="tsd-anchor"></a>
+					<h3>mutation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">mutation<span class="tsd-signature-symbol">(</span>body<span class="tsd-signature-symbol">: </span><a href="_controllers_mutation_controller_.mutationschema.html" class="tsd-signature-type">MutationSchema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/controllers/mutation.controller.ts:94</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>function</dt>
+									<dd><p>mutation</p>
+									</dd>
+									<dt>description</dt>
+									<dd><p>Map to <code>GET /mutation</code>, this function
+										contains the mixed logic for mutation endpoint.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>body: <a href="_controllers_mutation_controller_.mutationschema.html" class="tsd-signature-type">MutationSchema</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>true if it has mutation or false if it hasn&#39;t</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="stats" class="tsd-anchor"></a>
+					<h3>stats</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">stats<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/controllers/mutation.controller.ts:161</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>function</dt>
+									<dd><p>stats</p>
+									</dd>
+									<dt>description</dt>
+									<dd><p>returns an object with the validation stats which includes
+										the count of mutations, no mutations and the ratio</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/___tests___acceptance_has_mutation_acceptance_.html">&quot;__tests__/acceptance/has-<wbr>mutation.acceptance&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/___tests___acceptance_test_helper_.html">&quot;__tests__/acceptance/test-<wbr>helper&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_application_.html">&quot;application&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_controllers_index_.html">&quot;controllers/index&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_controllers_mutation_controller_.html">&quot;controllers/mutation.controller&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_datasources_index_.html">&quot;datasources/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_datasources_postgres_datasource_.html">&quot;datasources/postgres.datasource&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_datasources_postgres_datasource_config_.html">&quot;datasources/postgres.datasource.config&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_environment_.html">&quot;environment&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_functions_has_mutation_.html">&quot;functions/has-<wbr>mutation&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_migrate_.html">&quot;migrate&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_models_index_.html">&quot;models/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_models_mutation_model_.html">&quot;models/mutation.model&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_repositories_index_.html">&quot;repositories/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_repositories_mutation_repository_.html">&quot;repositories/mutation.repository&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_sequence_.html">&quot;sequence&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_controllers_mutation_controller_.mutationcontroller.html" class="tsd-kind-icon">Mutation<wbr>Controller</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_controllers_mutation_controller_.mutationcontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_controllers_mutation_controller_.mutationcontroller.html#mutationrepository" class="tsd-kind-icon">mutation<wbr>Repository</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_controllers_mutation_controller_.mutationcontroller.html#req" class="tsd-kind-icon">req</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_controllers_mutation_controller_.mutationcontroller.html#requestbody" class="tsd-kind-icon">request<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_controllers_mutation_controller_.mutationcontroller.html#res" class="tsd-kind-icon">res</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_controllers_mutation_controller_.mutationcontroller.html#mutation" class="tsd-kind-icon">mutation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_controllers_mutation_controller_.mutationcontroller.html#stats" class="tsd-kind-icon">stats</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_controllers_mutation_controller_.mutationschema.html" class="tsd-kind-icon">Mutation<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
+						<a href="../modules/_controllers_mutation_controller_.html#mutation_request" class="tsd-kind-icon">MUTATION_<wbr>REQUEST</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
+						<a href="../modules/_controllers_mutation_controller_.html#mutation_response" class="tsd-kind-icon">MUTATION_<wbr>RESPONSE</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
+						<a href="../modules/_controllers_mutation_controller_.html#mutation_stats_response" class="tsd-kind-icon">MUTATION_<wbr>STATS_<wbr>RESPONSE</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
